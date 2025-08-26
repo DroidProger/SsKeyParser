@@ -1,0 +1,32 @@
+{
+    "ssconfigfile":"/etc/shadowsocks/config.json",
+    "sspath":"/bin/systemctl",
+    "ssrestartcommand":[
+        "restart",
+        "sslocal.service"
+    ],
+    "ssconfigsectionpath":[
+        "servers"
+    ],
+    "ssserverseditpos":1,
+    "sstimeoutdefault":0,
+    "outputfile":"/etc/sskeyparser/parsingresult.json",
+    "links":[
+        {
+            "url":"https://t.me/some_channel_with_keys",
+            "mask":[
+                "ss://"
+            ],
+            "configcount":3,
+            "parsetoptobot":false 
+        },
+        {
+            "url":"https://www.some_site_with_keys.com/",
+            "mask":[
+                "ss://"
+            ],
+            "configcount":1,
+            "parsetoptobot":true 
+        }
+    ]
+}
