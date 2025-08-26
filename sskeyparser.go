@@ -75,7 +75,7 @@ func decodeSsServerConfig(str string) {
 	if errstr != "" {
 		fmt.Println(errstr)
 	} else {
-		// save
+		
 	}
 }
 
@@ -216,7 +216,6 @@ func parseDown(link Link, body string) {
 								decodeSsServerConfig(str)
 								break
 							}
-							// if mask == "vless://"
 						}
 						c++
 					}
@@ -304,7 +303,7 @@ func main() {
 	}
 	var waitgroup sync.WaitGroup
 	resultFile, err := os.Create(config.OutputFile)
-	if err != nil { // если возникла ошибка
+	if err != nil { // 
 		fmt.Println("Unable to create file:", err)
 	}
 	defer resultFile.Close()
@@ -349,7 +348,7 @@ func RestartSs() {
 func setSsServiceConfig(path string, middle []byte) bool {
 	if fileExists(path) {
 		file, err := os.OpenFile(path, os.O_CREATE|os.O_RDWR, os.ModePerm)
-		if err != nil { // если возникла ошибка
+		if err != nil { // 
 			fmt.Println("Unable to open file:", err)
 			return false
 		}
