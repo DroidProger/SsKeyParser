@@ -1,6 +1,8 @@
 # SsKeyParser
 Parser for shadowsocks keys on web pages
 
+### Always backup your worked shadowsocks config.json 
+
 This app is extract shadowsocks keys from web pages and telegramm channels
 To run it type in terminal "path_to_app path_to_config_file"
 Example for linux
