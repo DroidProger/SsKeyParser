@@ -180,7 +180,7 @@ func parseUp(link Link, body string) {
 								decodeSsServerConfig(str)
 								break
 							}
-							// if mask == "vless://"
+							
 						}
 						c++
 					}
